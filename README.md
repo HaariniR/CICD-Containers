@@ -30,17 +30,13 @@ Step 3: Configure required parameters in aws parameter store
 
 Step 4: Code build job configuration - writing a build spec file(this will use dependencies from code artifact)
 to perform mvn test, code analysis with checkstyle and sonarqube analysis.
-![image](https://user-images.githubusercontent.com/102613218/229358246-f8babb96-b123-40d1-bfe2-59fc684950c2.png)
+![image](https://user-images.githubusercontent.com/102613218/229359324-bd823e5f-fe98-44ff-a119-45b3e19c4595.png)
+
 
 Step 5: If quality gates are passed, then invoke code build job to build & store the artifact.
 The final artifact generated is stored in Amazon S3
-![image](https://user-images.githubusercontent.com/102613218/229358311-3db27d44-bfc0-46b9-98c6-2aa306de25c9.png)
-
-The complete CI pipeline flow
-![image](https://user-images.githubusercontent.com/102613218/229358332-8fa53ce3-ee7b-411d-93c7-35ba6f64c2ab.png)
-![image](https://user-images.githubusercontent.com/102613218/229358340-0d3abdd3-94d6-48d5-ad0e-57f1bc0238bf.png)
-![image](https://user-images.githubusercontent.com/102613218/229358345-60bb759d-fb01-4d74-9585-a997593c0e84.png)
-![image](https://user-images.githubusercontent.com/102613218/229358351-ca9ae8ef-b67c-4301-8b4b-addbfcb1833d.png)
+![image](https://user-images.githubusercontent.com/102613218/229359343-d6266bd4-58c2-426e-930b-2e876dda4898.png)
+![image](https://user-images.githubusercontent.com/102613218/229359354-7b082e9d-6efb-44c2-8c63-2ec6e9fa9f56.png)
 
 Artifact gets uploaded in S3
 ![image](https://user-images.githubusercontent.com/102613218/229358358-5f868883-7b3e-401e-8198-2bd215d226af.png)
@@ -64,11 +60,3 @@ Step 7: Software testing - configure a software testing job with selenium.
 ![image](https://user-images.githubusercontent.com/102613218/229359073-58b5cd7e-af78-4dab-b7c3-87d7589c2f7c.png)
 ![image](https://user-images.githubusercontent.com/102613218/229359089-36ae5e85-d79a-4b4b-ac41-cdd9ac63c5d5.png)
 ![image](https://user-images.githubusercontent.com/102613218/229359094-0b495524-85e7-41e6-8537-9137504afa0b.png)
-
-
-
-
-
-
-
-
